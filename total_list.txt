@@ -1,0 +1,487 @@
+/home/seafly:
+Applications
+cloud_backup
+Desktop
+Documents
+Downloads
+examples.desktop
+github
+minicom.log
+Music
+Pictures
+Public
+sougou_64.deb
+Templates
+total_list.txt
+Videos
+vmware
+workspace
+
+/home/seafly/Applications:
+sunlogin_remote_linux
+Video_Notebook
+
+/home/seafly/Applications/sunlogin_remote_linux:
+alsa-lib
+imports
+language
+libasound.la
+libasound.so.2.0.0
+libcrypto.so.0.9.8
+libicudata.so.51
+libicui18n.so.51
+libicuuc.so.51
+libOrayAudioPlayer.so.1.0.0
+libOrayCameraPlayer.so.1.0.0
+libOrayCMDClient.so.1.0.0
+libOrayDesktopControl.so.1.0.0
+libOrayFileManager.so.1.0.0
+libPluginConnector.so.1
+libplugininterface.so.1
+libQt5Core.so.5
+libQt5DBus.so.5
+libQt5Declarative.so.5
+libQt5Gui.so.5
+libQt5Multimedia.so.5
+libQt5MultimediaWidgets.so.5
+libQt5Network.so.5
+libQt5OpenGL.so.5
+libQt5Script.so.5
+libQt5Sql.so.5
+libQt5Widgets.so.5
+libQt5XmlPatterns.so.5
+libQt5Xml.so.5
+libssl.so.0.9.8
+plugins
+qt.conf
+readme
+sunloginremote
+SunloginRemote
+
+/home/seafly/Applications/sunlogin_remote_linux/alsa-lib:
+smixer
+
+/home/seafly/Applications/sunlogin_remote_linux/alsa-lib/smixer:
+smixer-ac97.la
+smixer-ac97.so
+smixer-hda.la
+smixer-hda.so
+smixer-sbase.la
+smixer-sbase.so
+
+/home/seafly/Applications/sunlogin_remote_linux/imports:
+QtDesktop
+
+/home/seafly/Applications/sunlogin_remote_linux/imports/QtDesktop:
+ApplicationWindow.qml
+ButtonColumn.qml
+Button.qml
+ButtonRow.qml
+CheckBox.qml
+ComboBox.qml
+ContextMenu.qml
+custom
+Dialog.qml
+Dial.qml
+Frame.qml
+GroupBox.qml
+images
+Label.qml
+MenuItem.qml
+plugin
+private
+ProgressBar.qml
+qmldir
+RadioButton.qml
+ScrollArea.qml
+ScrollBar.qml
+Slider.qml
+SpinBox.qml
+SplitterColumn.qml
+SplitterRow.qml
+StatusBar.qml
+TabBar.qml
+TabFrame.qml
+TableColumn.qml
+TableView.qml
+Tab.qml
+TextArea.qml
+TextField.qml
+ToolBar.qml
+ToolButton.qml
+
+/home/seafly/Applications/sunlogin_remote_linux/imports/QtDesktop/custom:
+BasicButton.qml
+behaviors
+ButtonColumn.qml
+ButtonGroup.js
+Button.qml
+ButtonRow.qml
+CheckBox.qml
+components.pro
+GroupBox.qml
+ProgressBar.qml
+qmldir
+Slider.qml
+SpinBox.qml
+Splitter.qml
+TextField.qml
+
+/home/seafly/Applications/sunlogin_remote_linux/imports/QtDesktop/custom/behaviors:
+ButtonBehavior.qml
+ModalPopupBehavior.qml
+
+/home/seafly/Applications/sunlogin_remote_linux/imports/QtDesktop/images:
+folder_new.png
+
+/home/seafly/Applications/sunlogin_remote_linux/imports/QtDesktop/plugin:
+libstyleplugin.so
+
+/home/seafly/Applications/sunlogin_remote_linux/imports/QtDesktop/private:
+ScrollAreaHelper.qml
+
+/home/seafly/Applications/sunlogin_remote_linux/language:
+language.xml
+qt_ko.qm
+qt_zh_CN.qm
+qt_zh_TW.qm
+translation_en.qm
+translation_ko.qm
+translation_ko.ts
+translation_zh_CN.qm
+translation_zh_TW.qm
+
+/home/seafly/Applications/sunlogin_remote_linux/plugins:
+imageformats
+platforms
+
+/home/seafly/Applications/sunlogin_remote_linux/plugins/imageformats:
+libqgif.so
+libqico.so
+libqjpeg.so
+libqmng.so
+libqsvg.so
+libqtga.so
+libqtiff.so
+libqwbmp.so
+
+/home/seafly/Applications/sunlogin_remote_linux/plugins/platforms:
+libqeglfs.so
+libqlinuxfb.so
+libqminimalegl.so
+libqminimal.so
+libqoffscreen.so
+libqxcb.so
+
+/home/seafly/Applications/Video_Notebook:
+Android_list.txt
+Embedded_list.txt
+find.man
+README.md
+search.sh
+STM32_list.txt
+total_list.txt
+
+/home/seafly/cloud_backup:
+
+/home/seafly/Desktop:
+DOC
+
+/home/seafly/Documents:
+binlock-v2-201704060726.tar.gz
+Embedded
+minicom-2.6.2.tar.gz
+rarlinux-x64-4.2.0.tar.gz
+STM32
+Video_Notebook
+vmware_install_tool.tar
+VMware-Workstation-Full-12.0.1-3160714.x86_64.bundle
+wine-qqintl.tar.bz2
+
+/home/seafly/Documents/Embedded:
+ARM处理器性能图片.png
+内核驱动-上
+内核驱动-下
+内核驱动奥秘多.docx
+裸奔吧ARM.docx
+裸奔吧ARM-上
+裸奔吧ARM-下
+计划书.docx
+韦东山第1_2_3_4期详细目录介绍.pdf
+项目开发
+
+/home/seafly/Documents/Embedded/内核驱动-上:
+专题02-uboot新手入门.docx
+专题03-嵌入式Linux内核制作.docx
+专题04-嵌入式文件系统.docx
+专题05-内核模块开发.docx
+专题06-Linux内核子系统.docx
+内核驱动奥秘多.docx
+
+/home/seafly/Documents/Embedded/内核驱动-下:
+专题01-按键驱动程序设计.docx
+专题02-总线设备驱动模型.docx
+专题03-串口驱动程序设计.docx
+专题04-网卡驱动程序设计.docx
+专题05-触摸屏驱动程序设计.docx
+专题06-LCD驱动程序设计.docx
+专题07-FLASH驱动程序设计.docx
+专题08-I2C驱动程序设计.docx
+专题09-SPI驱动程序设计.docx
+专题10-USB驱动程序设计.docx
+
+/home/seafly/Documents/Embedded/裸奔吧ARM-上:
+专题01-工欲善其事-必先利其器.docx
+专题02-我从内部看ARM.docx
+专题03-汇编语言得玩转.docx
+
+/home/seafly/Documents/Embedded/裸奔吧ARM-下:
+
+/home/seafly/Documents/Embedded/项目开发:
+专用通信与CGI通信.docx
+
+/home/seafly/Documents/STM32:
+F103-指南者-用户手册.pdf
+STM32F103ZET6_数据手册-中文.pdf
+STM32_参考手册-中文.pdf
+如何安装KEIL5（包含安装芯片包）.pdf
+零死角玩转STM32—F103指南者.pdf
+
+/home/seafly/Documents/Video_Notebook:
+Android
+Embedded
+STM32
+
+/home/seafly/Documents/Video_Notebook/Android:
+
+/home/seafly/Documents/Video_Notebook/Embedded:
+
+/home/seafly/Documents/Video_Notebook/STM32:
+01-Linux环境开发STM32
+
+/home/seafly/Documents/Video_Notebook/STM32/01-Linux环境开发STM32:
+使用Makefile开发STM32.docx
+
+/home/seafly/Downloads:
+Android安卓跟Linux系列.zip
+hosts.zip
+sunlogin_remote_1.6.0.35116.tar.gz
+sunlogin_remoteclient_2.2.0.39537Beta.tar.gz
+
+/home/seafly/github:
+
+/home/seafly/Music:
+Inspire.mp3
+Jasper Forks - River Flows In You - SIngle MG Mix版纯音乐.mp3
+Martin Ermen - River Flows in You - 纯音乐版.mp3
+Owl City、breanne Duren - The Saltwater Room.mp3
+Two Steps From Hell - Victory.mp3
+X-Ray Dog - From The Heart - 纯音乐版.mp3
+严艺丹 - 我愿意.mp3
+人工智能或将毁灭人类..mp3
+伍佰 - 简单爱.mp3
+刘诺婕、宋马超 - 独寂.mkv
+刘诺婕、宋马超 - 独寂.mp3
+叶一茜 - 风吹麦浪.mp3
+吴海啸、安瑞兮 - 幸福宣告.mp3
+周二珂 - 告白气球.mkv
+周二珂 - 告白气球.mp3
+大圈圈程嘉敏&鱼懿.mp3
+安瑞兮 - 孤单心事.mp3
+庄心妍 - 走着走着就散了.mp3
+张含韵 - 酸酸甜甜就是我.mp3
+彭丽丽 - 你的离开带走我的爱.mp3
+方炯镔 - 坏人.mp3
+汪苏泷 - 一笑倾城.mp3
+逃跑计划 - 夜空中最亮的星.mp3
+金典老歌 - 敢问路在何方.mp3
+钢琴曲 - 忧伤还是快乐.mp3
+阿悄 - 在深秋.mp3
+陈奕迅 - 好久不见.mp3
+陈小春 - 我爱的人.mp3
+陈小春 - 我爱的人 - 原版伴奏.mp3
+
+/home/seafly/Pictures:
+01.邀约要自然.png
+02.约会时间别太久.png
+03.有计划地安排行程.png
+04.约会的话题要准备.png
+05.约会的时机要把握.png
+06.把握好不紧不慢的节奏.png
+07.后续的约会.png
+abc.png
+Screenshot20170629123505.png
+smplayer_screenshots
+
+/home/seafly/Pictures/smplayer_screenshots:
+
+/home/seafly/Public:
+
+/home/seafly/Templates:
+
+/home/seafly/Videos:
+4_预备知识_指针_1.swf
+乐视网-敢死队3超清版.mp4
+周二珂 - 告白气球.mkv
+大圈圈.mp4
+料理鼠王.rmvb
+机械师2：复活.BD中英双字1280高清.rmvb
+第1课-Android全系统烧写.avi
+赵丽颖土豆娱乐.flv
+骇客追缉令 [超清].mp4
+
+/home/seafly/vmware:
+redhat6_x86_clone01
+Windows 7 x64
+
+/home/seafly/vmware/redhat6_x86_clone01:
+password.txt
+redhat6_x86_clone01.nvram
+redhat6_x86_clone01.vmsd
+redhat6_x86_clone01.vmx
+redhat6_x86_clone01.vmxf
+Red Hat Enterprise Linux 6-cl2-s001.vmdk
+Red Hat Enterprise Linux 6-cl2-s002.vmdk
+Red Hat Enterprise Linux 6-cl2-s003.vmdk
+Red Hat Enterprise Linux 6-cl2-s004.vmdk
+Red Hat Enterprise Linux 6-cl2-s005.vmdk
+Red Hat Enterprise Linux 6-cl2-s006.vmdk
+Red Hat Enterprise Linux 6-cl2.vmdk
+
+/home/seafly/vmware/Windows 7 x64:
+vmware-0.log
+vmware-1.log
+vmware-2.log
+vmware.log
+Windows 7 x64-000001-s001.vmdk
+Windows 7 x64-000001-s002.vmdk
+Windows 7 x64-000001-s003.vmdk
+Windows 7 x64-000001-s004.vmdk
+Windows 7 x64-000001-s005.vmdk
+Windows 7 x64-000001-s006.vmdk
+Windows 7 x64-000001-s007.vmdk
+Windows 7 x64-000001-s008.vmdk
+Windows 7 x64-000001-s009.vmdk
+Windows 7 x64-000001-s010.vmdk
+Windows 7 x64-000001-s011.vmdk
+Windows 7 x64-000001-s012.vmdk
+Windows 7 x64-000001-s013.vmdk
+Windows 7 x64-000001-s014.vmdk
+Windows 7 x64-000001-s015.vmdk
+Windows 7 x64-000001-s016.vmdk
+Windows 7 x64-000001.vmdk
+Windows 7 x64-000002-s001.vmdk
+Windows 7 x64-000002-s002.vmdk
+Windows 7 x64-000002-s003.vmdk
+Windows 7 x64-000002-s004.vmdk
+Windows 7 x64-000002-s005.vmdk
+Windows 7 x64-000002-s006.vmdk
+Windows 7 x64-000002-s007.vmdk
+Windows 7 x64-000002-s008.vmdk
+Windows 7 x64-000002-s009.vmdk
+Windows 7 x64-000002-s010.vmdk
+Windows 7 x64-000002-s011.vmdk
+Windows 7 x64-000002-s012.vmdk
+Windows 7 x64-000002-s013.vmdk
+Windows 7 x64-000002-s014.vmdk
+Windows 7 x64-000002-s015.vmdk
+Windows 7 x64-000002-s016.vmdk
+Windows 7 x64-000002.vmdk
+Windows 7 x64-000003-s001.vmdk
+Windows 7 x64-000003-s002.vmdk
+Windows 7 x64-000003-s003.vmdk
+Windows 7 x64-000003-s004.vmdk
+Windows 7 x64-000003-s005.vmdk
+Windows 7 x64-000003-s006.vmdk
+Windows 7 x64-000003-s007.vmdk
+Windows 7 x64-000003-s008.vmdk
+Windows 7 x64-000003-s009.vmdk
+Windows 7 x64-000003-s010.vmdk
+Windows 7 x64-000003-s011.vmdk
+Windows 7 x64-000003-s012.vmdk
+Windows 7 x64-000003-s013.vmdk
+Windows 7 x64-000003-s014.vmdk
+Windows 7 x64-000003-s015.vmdk
+Windows 7 x64-000003-s016.vmdk
+Windows 7 x64-000003.vmdk
+Windows 7 x64-000004-s001.vmdk
+Windows 7 x64-000004-s002.vmdk
+Windows 7 x64-000004-s003.vmdk
+Windows 7 x64-000004-s004.vmdk
+Windows 7 x64-000004-s005.vmdk
+Windows 7 x64-000004-s006.vmdk
+Windows 7 x64-000004-s007.vmdk
+Windows 7 x64-000004-s008.vmdk
+Windows 7 x64-000004-s009.vmdk
+Windows 7 x64-000004-s010.vmdk
+Windows 7 x64-000004-s011.vmdk
+Windows 7 x64-000004-s012.vmdk
+Windows 7 x64-000004-s013.vmdk
+Windows 7 x64-000004-s014.vmdk
+Windows 7 x64-000004-s015.vmdk
+Windows 7 x64-000004-s016.vmdk
+Windows 7 x64-000004.vmdk
+Windows 7 x64-000005-s001.vmdk
+Windows 7 x64-000005-s002.vmdk
+Windows 7 x64-000005-s003.vmdk
+Windows 7 x64-000005-s004.vmdk
+Windows 7 x64-000005-s005.vmdk
+Windows 7 x64-000005-s006.vmdk
+Windows 7 x64-000005-s007.vmdk
+Windows 7 x64-000005-s008.vmdk
+Windows 7 x64-000005-s009.vmdk
+Windows 7 x64-000005-s010.vmdk
+Windows 7 x64-000005-s011.vmdk
+Windows 7 x64-000005-s012.vmdk
+Windows 7 x64-000005-s013.vmdk
+Windows 7 x64-000005-s014.vmdk
+Windows 7 x64-000005-s015.vmdk
+Windows 7 x64-000005-s016.vmdk
+Windows 7 x64-000005.vmdk
+Windows 7 x64.nvram
+Windows 7 x64-s001.vmdk
+Windows 7 x64-s002.vmdk
+Windows 7 x64-s003.vmdk
+Windows 7 x64-s004.vmdk
+Windows 7 x64-s005.vmdk
+Windows 7 x64-s006.vmdk
+Windows 7 x64-s007.vmdk
+Windows 7 x64-s008.vmdk
+Windows 7 x64-s009.vmdk
+Windows 7 x64-s010.vmdk
+Windows 7 x64-s011.vmdk
+Windows 7 x64-s012.vmdk
+Windows 7 x64-s013.vmdk
+Windows 7 x64-s014.vmdk
+Windows 7 x64-s015.vmdk
+Windows 7 x64-s016.vmdk
+Windows 7 x64-Snapshot1.vmsn
+Windows 7 x64-Snapshot2.vmsn
+Windows 7 x64-Snapshot3.vmsn
+Windows 7 x64-Snapshot4.vmem
+Windows 7 x64-Snapshot4.vmsn
+Windows 7 x64-Snapshot5.vmsn
+Windows 7 x64.vmdk
+Windows 7 x64.vmsd
+Windows 7 x64.vmx
+Windows 7 x64.vmxf
+
+/home/seafly/workspace:
+a.out
+dnw_src.tar.gz
+dnw_usb.c.bak
+dnw下载工具
+linux-2.6.39.tar.gz
+temp.txt
+test.c
+
+/home/seafly/workspace/dnw下载工具:
+dnw
+dnw.c
+dnw_usb.c
+dnw_usb.c.bak
+dnw_usb.ko
+Makefile
+Makefile.bak
+readme.txt
+readme.txt.bak
