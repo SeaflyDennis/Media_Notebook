@@ -63,7 +63,7 @@ cat ~/seafly_search_pure.temp |\
 # 找出完整路径并写入临时文件（该位置暂时无法找到特殊字符文件名）
 cat ~/seafly_search_media.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_fullpath.temp
 echo "播放列表~/seafly_search_fullpath.temp："
-cat -n ~/seafly_search_media.temp
+cat -n ~/seafly_search_fullpath.temp
 
 # 逐行读取并播放列表中的媒体文件
 cat ~/seafly_search_fullpath.temp |\
