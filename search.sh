@@ -46,20 +46,24 @@ then
     echo "Error: Can't find $INPUT_STRING"
     exit 20
 fi
-echo "~/seafly_search.temp" ; cat ~/seafly_search.temp
+echo "~/seafly_search.temp:" ; cat ~/seafly_search.temp
 
 # 获取精确纯文件名列表并写入临时文件
-#cat ~/seafly_search.temp | awk -F ':' '{print $2}'
-#cat ~/seafly_search.temp | awk -F ':' '{print $2}' > ~/seafly_search_pure.temp
 cat ~/seafly_search.temp |\
     xargs -i -d '\n' echo {} |\
     awk -F ':' '{print $2}' |\
     xargs -i -d '\n' echo {} > $HOME/seafly_search_pure.temp
 echo "~/seafly_search_pure.temp:" ; cat ~/seafly_search_pure.temp
 
+# 过滤出媒体文件并将新列表写入临时文件
+cat ~/seafly_search_pure.temp |\
+    awk -F '\n' '{print $1}' |\
+    egrep ".mp3|.mp4|.avi|.wmv|.flv|.rmvb|.wav|.wma" > $HOME/seafly_search_media.temp
+
 # 找出完整路径并写入临时文件（该位置暂时无法找到特殊字符文件名）
-cat ~/seafly_search_pure.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_fullpath.temp
-echo "~/seafly_search_fullpath.temp:" ; cat ~/seafly_search_fullpath.temp
+cat ~/seafly_search_media.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_fullpath.temp
+echo "播放列表~/seafly_search_fullpath.temp："
+cat -n ~/seafly_search_media.temp
 
 # 逐行读取并播放列表中的媒体文件
 cat ~/seafly_search_fullpath.temp |\
@@ -74,15 +78,3 @@ rm -rf ~/seafly_search_grep.temp
 rm -rf ~/seafly_search_media.temp
 rm -rf ~/seafly_search_pure.temp
 rm -rf ~/seafly_search_playerlist.temp
-
-## 测试是否为媒体文件并播放媒体文件
-#cat ~/seafly_search_fullpath.temp |\
-    #xargs -i -d '\n' file {} |\
-    #egrep "Media|media|video|Video|Audio|audio" > ~/seafly_search_media.temp
-#echo "~/seafly_search_media.temp:" ; cat ~/seafly_search_media.temp
-
-## 过滤出媒体文件列表并写入临时文件
-#cat ~/seafly_search_media.temp |\
-    #xargs -i -d '\n' echo {} | awk -F ':' '{print $1}' > ~/seafly_search_fullpath.temp
-#echo "播放列表："
-#cat -n ~/seafly_search_fullpath.temp

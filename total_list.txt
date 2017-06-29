@@ -6,15 +6,22 @@ Documents
 Downloads
 examples.desktop
 github
+global
+Media_Notebook
 minicom.log
 Music
 Pictures
 Public
+seafly_search_fullpath.temp
+seafly_search_media.temp
+seafly_search_pure.temp
+seafly_search.temp
 sougou_64.deb
 Templates
-total_list.txt
+test.temp
 Videos
 vmware
+vol_1.list
 workspace
 
 /home/seafly/Applications:
@@ -177,26 +184,43 @@ libqxcb.so
 Android_list.txt
 Embedded_list.txt
 find.man
+global
+install.sh
 README.md
 search.sh
 STM32_list.txt
 total_list.txt
+vol_1.list
+
+/home/seafly/Applications/Video_Notebook/global:
+media.sh
 
 /home/seafly/cloud_backup:
 
 /home/seafly/Desktop:
 DOC
+Media_Notebook
 
 /home/seafly/Documents:
 binlock-v2-201704060726.tar.gz
 Embedded
+list_arm_GQ.txt
+list_arm_JZ.txt
+list_drv_GQ.txt
+list_drv_JZ.txt
 minicom-2.6.2.tar.gz
 rarlinux-x64-4.2.0.tar.gz
 STM32
-Video_Notebook
 vmware_install_tool.tar
 VMware-Workstation-Full-12.0.1-3160714.x86_64.bundle
 wine-qqintl.tar.bz2
+内存管理.png
+暑期学习组规划表.docx
+暑期嵌入式学习组资源共享-基础准备.txt
+期末考试复习
+网络子系统.png
+虚拟文件系统.png
+谷阿莫台词记录
 
 /home/seafly/Documents/Embedded:
 ARM处理器性能图片.png
@@ -247,20 +271,122 @@ STM32_参考手册-中文.pdf
 如何安装KEIL5（包含安装芯片包）.pdf
 零死角玩转STM32—F103指南者.pdf
 
-/home/seafly/Documents/Video_Notebook:
-Android
-Embedded
-STM32
+/home/seafly/Documents/期末考试复习:
+兵役登记（吴海飞）.pdf
+兵役登记存根（吴海飞）.pdf
+分子生物学
+化生院2017年上期考务安排（定稿）.xlsx
+发酵工程
+吴海飞：柳子庙与柳宗元.docx
+大学有机化学
+细胞工程
+细胞生物学
+细胞生物学习题大综合附答案.txt
+老王的吸星大法.docx
+遗传学
+遗传学复习题库.txt
+马克思主义原理
 
-/home/seafly/Documents/Video_Notebook/Android:
+/home/seafly/Documents/期末考试复习/分子生物学:
+15年分子生物学课件
+分子生物学试题及答案(整理版).txt
 
-/home/seafly/Documents/Video_Notebook/Embedded:
+/home/seafly/Documents/期末考试复习/分子生物学/15年分子生物学课件:
+分子生物学第6章+分子生物学研究方法(下).ppt
+分子生物学第三节.doc
+分子生物学练习题.docx
+分子生物学题目.doc
+狭义的分子生物学.doc
+现代分子生物学Lewin's GENES XI, 11 edition .pdf
+真核基因表达调控（1）.ppt
+真核基因表达调控（2）.ppt
+第5章_分子生物学研究方法(上).ppt
+第一章 绪论.ppt
+第三章生物信息的传递（上）——转录.ppt
+第二章染色体与DNA.ppt
+第二章练习题.ppt
+第五章_分子生物学研究法(上).ppt
+第六章 原核基因表达调控（修改）.ppt
+第四章 生物信息的传递（下）——翻译.ppt
 
-/home/seafly/Documents/Video_Notebook/STM32:
-01-Linux环境开发STM32
+/home/seafly/Documents/期末考试复习/发酵工程:
+发酵工程试题及答案.txt
 
-/home/seafly/Documents/Video_Notebook/STM32/01-Linux环境开发STM32:
-使用Makefile开发STM32.docx
+/home/seafly/Documents/期末考试复习/大学有机化学:
+大学有机化学复习总结史上最全.docx
+有机化学试卷(A卷答案).docx
+有机化学试卷(A卷答案).txt
+
+/home/seafly/Documents/期末考试复习/细胞工程:
+2016细胞工程复习题及答案（精心整理）.txt
+细胞工程
+细胞工程试题及答案.txt
+
+/home/seafly/Documents/期末考试复习/细胞工程/细胞工程:
+201505040125 隆韶伟 .pptx
+细胞工程试卷
+胚胎干细胞.pptx
+胚胎干细胞介绍.mp4
+
+/home/seafly/Documents/期末考试复习/细胞工程/细胞工程/细胞工程试卷:
+2012
+2013
+2014
+细胞工程复习资料.docx
+
+/home/seafly/Documents/期末考试复习/细胞工程/细胞工程/细胞工程试卷/2012:
+《细胞工程》试卷2012.doc
+《细胞工程》试卷2012参考答案.doc
+~$胞工程》试卷2012参考答案.doc
+
+/home/seafly/Documents/期末考试复习/细胞工程/细胞工程/细胞工程试卷/2013:
+《细胞工程》试卷2013.doc
+《细胞工程》试卷2013参考答案.doc
+
+/home/seafly/Documents/期末考试复习/细胞工程/细胞工程/细胞工程试卷/2014:
+《细胞工程》试卷14.doc
+《细胞工程》试卷14参考答案.doc
+
+/home/seafly/Documents/期末考试复习/细胞生物学:
+细胞生物学复习
+细胞生物学复习题及详细答案.txt
+
+/home/seafly/Documents/期末考试复习/细胞生物学/细胞生物学复习:
+细胞生物学复习资料.doc
+细胞生物学最后一堂练习题.docx
+细胞生物学模拟试卷及答案.doc
+细胞生物学自主命题习题.docx
+细胞生物学课堂作业.docx
+
+/home/seafly/Documents/期末考试复习/遗传学:
+遗传学
+遗传学考试题库(汇总)(含答案).txt
+遗传学试题库及答案_(12套_).txt
+
+/home/seafly/Documents/期末考试复习/遗传学/遗传学:
+遗传学.doc
+闫荣玲B卷-2012年下期遗传学期末考试试卷答案.doc
+
+/home/seafly/Documents/期末考试复习/马克思主义原理:
+2017上期马克思原理重点.docx
+刷题库
+马克思主义基本原理授课重点.docx
+~$马克思总教案.doc
+马克思总教案.doc
+马克思总教案 - 修改版.doc
+
+/home/seafly/Documents/期末考试复习/马克思主义原理/刷题库:
+01-2012上期原理A卷.doc
+02-2011年上期原理B卷.doc
+03-链接4号题.docx
+04-链接3号题长沙2007马克思A卷.docx
+2017年上期复习资料.docx
+马原复习题及完整版答案 .txt
+马原期末试题及答案(精).txt
+马原考试复习题_(带全答案).doc.txt
+马原试题与答案.txt
+
+/home/seafly/Documents/谷阿莫台词记录:
 
 /home/seafly/Downloads:
 Android安卓跟Linux系列.zip
@@ -269,6 +395,98 @@ sunlogin_remote_1.6.0.35116.tar.gz
 sunlogin_remoteclient_2.2.0.39537Beta.tar.gz
 
 /home/seafly/github:
+Media_Notebook
+
+/home/seafly/github/Media_Notebook:
+Android_list.txt
+Embedded_list.txt
+global
+install.sh
+LICENSE
+README.md
+search.sh
+STM32_list.txt
+total_list.txt
+
+/home/seafly/github/Media_Notebook/global:
+media.sh
+
+/home/seafly/global:
+
+/home/seafly/Media_Notebook:
+01-STM32
+02-Embedded
+03-Android
+Amusement_list.txt
+Android_list.txt
+Embedded_list.txt
+global
+install.sh
+LICENSE
+README.md
+search.sh
+STM32_list.txt
+total_list.txt
+
+/home/seafly/Media_Notebook/01-STM32:
+01-Linux环境开发STM32
+02-Windows环境开发STM32
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32:
+00-工欲善其事必先利其器
+00-工欲善其事必先利其器.docx
+01-我叫Makefile
+01-我叫Makefile.docx
+02-点灯实验
+02-点灯实验.docx
+03-优化程序大小
+03-优化程序大小.docx
+04-在SRAM中运行程序
+04-在SRAM中运行程序.docx
+05-使用串口
+05-使用串口.docx
+06-使用printf
+06-使用printf.docx
+07-使用硬浮点计算
+07-使用硬浮点计算.docx
+08-再谈_exit
+08-再谈_exit.docx
+09-使用malloc
+09-使用malloc.docx
+10-使用gdb找出因除0导致的HardFault
+10-使用gdb找出因除0导致的HardFault.docx
+使用Makefile开发STM32.docx
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/00-工欲善其事必先利其器:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/01-我叫Makefile:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/02-点灯实验:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/03-优化程序大小:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/04-在SRAM中运行程序:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/05-使用串口:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/06-使用printf:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/07-使用硬浮点计算:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/08-再谈_exit:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/09-使用malloc:
+
+/home/seafly/Media_Notebook/01-STM32/01-Linux环境开发STM32/10-使用gdb找出因除0导致的HardFault:
+
+/home/seafly/Media_Notebook/01-STM32/02-Windows环境开发STM32:
+
+/home/seafly/Media_Notebook/02-Embedded:
+
+/home/seafly/Media_Notebook/03-Android:
+
+/home/seafly/Media_Notebook/global:
+media.sh
 
 /home/seafly/Music:
 Inspire.mp3
@@ -316,19 +534,22 @@ smplayer_screenshots
 /home/seafly/Pictures/smplayer_screenshots:
 
 /home/seafly/Public:
+清纯家庭教师.mp4
+清纯家教.rmvb
 
 /home/seafly/Templates:
 
 /home/seafly/Videos:
 4_预备知识_指针_1.swf
 乐视网-敢死队3超清版.mp4
+典典 - 大圈圈.mp4
+典典 - 大圈圈.tst
 周二珂 - 告白气球.mkv
-大圈圈.mp4
 料理鼠王.rmvb
 机械师2：复活.BD中英双字1280高清.rmvb
 第1课-Android全系统烧写.avi
 赵丽颖土豆娱乐.flv
-骇客追缉令 [超清].mp4
+骇客追缉令-高清版.mp4
 
 /home/seafly/vmware:
 redhat6_x86_clone01
