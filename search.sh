@@ -7,6 +7,7 @@
 # 获取可用播放器
 CUR_DIR=`pwd`
 FIND_DIR=$HOME
+TOTAL_DIR=$HOME
 echo HOME=$HOME
 PLAYER_LIST="smplayer mplayer"
 
@@ -27,7 +28,7 @@ then
 fi
 
 # 获取总列表
-ls -R $HOME > $CUR_DIR/total_list.txt
+ls -R $TOTAL_DIR > $CUR_DIR/total_list.txt
 
 # 从用户输入获取关键字
 if [ $# -ne 1 ] ;
