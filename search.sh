@@ -58,7 +58,7 @@ echo "~/seafly_search_pure.temp:" ; cat ~/seafly_search_pure.temp
 # 过滤出媒体文件并将新列表写入临时文件
 cat ~/seafly_search_pure.temp |\
     awk -F '\n' '{print $1}' |\
-    egrep ".mp3|.mp4|.avi|.wmv|.flv|.rmvb|.wav|.wma" > $HOME/seafly_search_media.temp
+    egrep "*.mp3|*.mp4|*.avi|*.wmv|*.flv|*.rmvb|*.wav|*.wma" > $HOME/seafly_search_media.temp
 
 # 找出完整路径并写入临时文件（该位置暂时无法找到特殊字符文件名）
 cat ~/seafly_search_media.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_fullpath.temp
