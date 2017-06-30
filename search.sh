@@ -223,6 +223,12 @@ then
             play_search_list
             clear_temp_file
             ;;
+        "kazam|KAZAM")
+            echo "一款Linux下不错的录屏软件"
+            ;;
+        "supertuxkart|SuperTuxKart")
+            echo "一款Linux下不错的跑跑卡丁车游戏"
+            ;;
         *)
             echo "Usage: media.sh [player] keyword"
             exit 10
