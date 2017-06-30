@@ -146,7 +146,7 @@ fi
 if [ $# -eq 2 ] ;
 then
     case "$1" in
-        "mplayer"|"/usr/bin/mplayer"|"mp3"|"mp4"|"flv"|"avi"|"mkv"|"wmv"|"rmvb"|"wav"|"wma")
+        "mplayer"|"/usr/bin/mplayer")
             PLAYER=mplayer
             INPUT_STRING=$2
             check_player
@@ -157,7 +157,7 @@ then
             play_search_list
             clear_temp_file
             ;;
-        "smplayer"|"/usr/bin/smplayer"|"mp3"|"mp4"|"flv"|"avi"|"mkv"|"wmv"|"rmvb"|"wav"|"wma") # media
+        "smplayer"|"/usr/bin/smplayer") # media
             PLAYER=smplayer
             INPUT_STRING=$2
             check_player
