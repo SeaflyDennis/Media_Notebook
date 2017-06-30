@@ -36,11 +36,11 @@ ls -R $TOTAL_DIR > $CUR_DIR/total_list.txt
 if [ $# -ne 1 ] ;
 then
     case "$1" in
-        "mplayer")
+        "mplayer"|"/usr/bin/mplayer")
             PLAYER=mplayer
             INPUT_STRING=$2
             ;;
-        "smplayer")
+        "smplayer"|"/usr/bin/smplayer")
             PLAYER=smplayer
             INPUT_STRING=$2
             ;;
