@@ -4,5 +4,5 @@
 # Date: 2017.06.29
 # Last Modified: 2017.06.29
 
-cd $HOME/Media_Notebook ; ./search.sh $1
+cd $HOME/Media_Notebook ; ./search.sh $@
 exit 0

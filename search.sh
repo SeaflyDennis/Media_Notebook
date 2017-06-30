@@ -3,12 +3,14 @@
 # Author: SeaflyDennis <seafly0616@qq.com>
 # Date: 2017.06.29
 # Last Modified: 2017.06.29
+echo "Author: SeaflyDennis <seafly0616@qq.com>"
+echo "WeChat: seafly0616"
 
-# 获取可用播放器
 CUR_DIR=`pwd`
 FIND_DIR=$HOME
 TOTAL_DIR=$HOME
-echo HOME=$HOME
+
+# 获取可用播放器
 PLAYER_LIST="smplayer mplayer"
 
 for PLAYER in $PLAYER_LIST
@@ -33,10 +35,28 @@ ls -R $TOTAL_DIR > $CUR_DIR/total_list.txt
 # 从用户输入获取关键字
 if [ $# -ne 1 ] ;
 then
-    echo "Usage: $0 keyword"
+    case "$1" in
+        "mplayer")
+            PLAYER=mplayer
+            INPUT_STRING=$2
+            ;;
+        "smplayer")
+            PLAYER=smplayer
+            INPUT_STRING=$2
+            ;;
+        *)
+            echo "Usage: media.sh [player] keyword"
+            exit 10
+            ;;
+    esac
+elif [ $# -eq 1 ] ;
+then
+    INPUT_STRING=$1
+else
+    echo "Usage: media.sh [player] keyword"
     exit 10
 fi
-INPUT_STRING=$1
+
 echo "INPUT_STRING=$INPUT_STRING"
 
 # 在xxx.txt中寻找含有关键字的行，并逐行写入临时文件
