@@ -82,13 +82,26 @@ function get_search_png_list()
               |*.PNG|*.JPG|*.JPEG|*.BMP" > $HOME/seafly_search_media.temp
 }
 
-function get_search_fullpath_list()
+function get_search_all_path()
+{
+    # 获取搜到的所有类型文件路径
+    cat /dev/null > ~/seafly_search_all_path.temp
+    cat ~/seafly_search_pure.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_all_path.temp
+    echo ""
+    echo ""
+    echo "搜索得到的总列表：        "
+    cat -n ~/seafly_search_all_path.temp
+}
+
+function get_search_final_path()
 {
     # 找出完整路径并写入临时文件（该位置暂时无法找到特殊字符文件名）
-    cat /dev/null > ~/seafly_search_fullpath.temp
-    cat ~/seafly_search_media.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_fullpath.temp
-    echo "最终列表：（~/seafly_search_fullpath.temp）"
-    cat -n ~/seafly_search_fullpath.temp
+    cat /dev/null > ~/seafly_search_final_path.temp
+    cat ~/seafly_search_media.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_final_path.temp
+    echo ""
+    echo ""
+    echo "最终列表："
+    cat -n ~/seafly_search_final_path.temp
 }
 
 function check_player()
@@ -104,7 +117,7 @@ function check_player()
 function play_search_list()
 {
     # 逐行读取并播放列表中的媒体文件
-    cat ~/seafly_search_fullpath.temp |\
+    cat ~/seafly_search_final_path.temp |\
         xargs -i -d '\n' $PLAYER {}
 }
 
@@ -114,11 +127,12 @@ function clear_temp_file()
     rm -rf ~/seafly_file_test.temp
     rm -rf ~/seafly_search.temp
     rm -rf ~/seafly_search_bool.temp
-    rm -rf ~/seafly_search_fullpath.temp
+    rm -rf ~/seafly_search_final_path.temp
     rm -rf ~/seafly_search_grep.temp
     rm -rf ~/seafly_search_media.temp
     rm -rf ~/seafly_search_pure.temp
     rm -rf ~/seafly_search_playerlist.temp
+    rm -rf ~/seafly_search_all_path.temp
 }
 
 
@@ -153,7 +167,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_media_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -164,7 +179,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_media_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -175,7 +191,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_pdf_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -186,7 +203,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_doc_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -197,7 +215,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_ppt_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -208,7 +227,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_xls_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -219,7 +239,8 @@ then
             get_search_grep_list
             get_search_pure_list
             get_search_png_list
-            get_search_fullpath_list
+            get_search_all_path
+            get_search_final_path
             play_search_list
             clear_temp_file
             ;;
@@ -241,7 +262,8 @@ then
     get_search_grep_list
     get_search_pure_list
     get_search_media_list
-    get_search_fullpath_list
+    get_search_all_path
+    get_search_final_path
     play_search_list
     clear_temp_file
 else
