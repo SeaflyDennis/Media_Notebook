@@ -191,6 +191,20 @@ then
             play_search_list
             clear_temp_file
             ;;
+        "avi"|"AVI"|"flv"|"FLV"|"mkv"|"MKV"|"mp3"|"MP3"|"mp4"|"MP4"|\
+            "rmvb"|"RMVB"|"wav"|"WAV"|"wmv"|"WMV"|"media"|"MEDIA")
+            PLAYER="smplayer mplayer"
+            INPUT_STRING="$2"
+            check_player
+            get_search_grep_list
+            get_search_pure_list
+            get_search_media_list
+            get_search_all_path
+            get_search_final_path
+            check_player
+            play_search_list
+            clear_temp_file
+            ;;
         "okular"|"/usr/bin/okular")     # PDF
             PLAYER="okular"
             INPUT_STRING="$2"
