@@ -9,10 +9,14 @@ CUR_DIR=`pwd`
 cat $HOME/.bashrc | grep "Media_Notebook" 1>/dev/null 2>/dev/null
 BOOL_BASHRC=$?
 
+
+
 # 如果不存在则将.bashrc配置media.sh命令，然后退出
 if [ $BOOL_BASHRC -ne 0 ] ;
 then
-    cp -r $CUR_DIR $HOME 2>/dev/null
+    cp -rf $CUR_DIR $HOME 2>/dev/null
+    chmod 755 ${HOME}/Media_Notebook/search.sh
+    chmod 755 ${HOME}/Media_Notebook/global/media.sh
     echo "export PATH=$HOME/Media_Notebook/global:$PATH" >> $HOME/.bashrc
     echo "install successfully!"
     echo "Please run following command manually: "
@@ -21,7 +25,9 @@ then
     exit 0
 else
     echo "Rewrite config files..."
-    cp -r $CUR_DIR $HOME 2>/dev/null
+    cp -rf $CUR_DIR $HOME 2>/dev/null
+    chmod 755 ${HOME}/Media_Notebook/search.sh
+    chmod 755 ${HOME}/Media_Notebook/global/media.sh
     echo "You already install it!"
     exit 0
 fi

@@ -3,25 +3,25 @@
     0.特点：根据提供的非完整文件名也能找到相应文件
     1.目的：方便快速找到并打开相应媒体文件或其他文件
     2.默认：默认使用mplayer或smplayer打开文件（打开前会检查是否为媒体文件）
-    3.准备：一些必备工具的安装准备.mp4
-        1.安装版本控制工具客户端git（ubuntu）.mp4
-        2.安装媒体播放器mplayer和smplayer（ubuntu）.mp4
-        3.安装PDF阅读器（ubuntu）.mp4
-            1.PDF阅读器okular的安装与使用（ubuntu）.mp4
-            2.PDF阅读器福昕阅读器的安装与使用（ubuntu）.mp4
-            （以上两款PDF阅读器安装成功任意一款都可以，你开心的话两款都安装吧）
+    3.准备：Media_Notebook安装前的准备工作.mp4
     4.注意：Media_Notebook注意事项.mp4
-        1.里面的目录或文件只能多不能少（尤其.txt文件和对应目录）
-        2.新添加的文件名不得包含非法字符或尽量不包含空格字符
+        1.里面的目录或文件只能多不能少，否则脚本无法正常工作（尤其.txt）
+        2.新添加的文件名不得包含非法特殊字符或尽量不包含空格字符
 
 # Media_Notebook安装前的准备工作.mp4
-    1.Ubuntu的网络准备-连接无线网.mp4
-    2.Ubuntu的软件源镜像源配置.mp4
-    3.安装版本控制工具客户端git（ubuntu）.mp4
-    4.安装媒体播放器mplayer和smplayer（ubuntu）.mp4
+    Ubuntu的网络准备-网络连接.mp4
+    Ubuntu的软件源镜像源配置.mp4
+    安装版本控制工具客户端git（ubuntu）.mp4                                   （后面的安装需要使用）
+    安装搜狗输入法sogou（ubuntu）.mp4                                         （中国人推荐输入法）
+    安装媒体播放器mplayer和smplayer（ubuntu）.mp4                             （添加对音频视频文件支持）
+    安装vim编辑器工具包vimtools（ubuntu）.mp4                                 （添加对vim高级功能支持）
+    安装PDF阅读器okular的安装与使用（ubuntu）.mp4                             （添加对PDF文档支持）
+    安装PDF阅读器福昕阅读器的安装与使用.mp4                                   （添加对PDF文档编辑支持）
+    安装谷歌浏览器google-chrome-stable（ubuntu）.mp4                          （开发人员推荐浏览器）
+    安装图片查看器eog（ubuntu）.mp4                                           （图片查看软件）
 
 # Media_Notebook获取.mp4
-    0.准备：sudo apt-get install git
+    0.准备：sudo apt-get install -y git git-core
     1.获取：git clone https://github.com/SeaflyDennis/Media_Notebook
 
 # Media_Notebook安装.mp4
