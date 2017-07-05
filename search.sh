@@ -169,6 +169,7 @@ then
             get_search_media_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -181,6 +182,7 @@ then
             get_search_media_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -193,6 +195,7 @@ then
             get_search_pdf_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -205,6 +208,7 @@ then
             get_search_doc_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -217,6 +221,7 @@ then
             get_search_ppt_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -229,6 +234,7 @@ then
             get_search_xls_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -241,6 +247,7 @@ then
             get_search_png_list
             get_search_all_path
             get_search_final_path
+            check_player
             play_search_list
             clear_temp_file
             ;;
@@ -264,6 +271,7 @@ then
     get_search_media_list
     get_search_all_path
     get_search_final_path
+    check_player
     play_search_list
     clear_temp_file
 else
