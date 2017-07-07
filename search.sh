@@ -36,8 +36,15 @@ function get_search_media_list()
     # 判断过滤出媒体文件并将新列表写入临时文件
     cat ~/seafly_search_pure.temp |\
         awk -F '\n' '{print $1}' |\
-        egrep "*.mp3|*.mp4|*.avi|*.wmv|*.flv|*.mkv|*.rmvb|*.wav|*.wma\
-              |*.MP3|*.MP4|*.AVI|*.WMV|*.FLV|*.MKV|*.RMVB|*.WAV|*.WMA" > $HOME/seafly_search_media.temp
+        egrep "*.mp3|*.mp4|*.avi|*.flv|*.mkv|*.rmvb|*.wav|*.wma\
+              |*.MP3|*.MP4|*.AVI|*.FLV|*.MKV|*.RMVB|*.WAV|*.WMA" > $HOME/seafly_search_media.temp
+}
+
+function get_search_wmv_list()
+{
+    cat ~/seafly_search_pure.temp |\
+        awk -F '\n' '{print $1}' |\
+             egrep "*.wmv|*.WMV" > $HOME/seafly_search_media.temp
 }
 
 function get_search_pdf_list()
@@ -191,8 +198,21 @@ then
             play_search_list
             clear_temp_file
             ;;
-        "avi"|"AVI"|"flv"|"FLV"|"mkv"|"MKV"|"mp3"|"MP3"|"mp4"|"MP4"|\
-            "rmvb"|"RMVB"|"wav"|"WAV"|"wmv"|"WMV"|"media"|"MEDIA")
+        "wmv"|"WMV")
+            PLAYER="totem"
+            INPUT_STRING="$2"
+            check_player
+            get_search_grep_list
+            get_search_pure_list
+            get_search_wmv_list
+            get_search_all_path
+            get_search_final_path
+            check_player
+            play_search_list
+            clear_temp_file
+            ;;
+            "avi"|"AVI"|"flv"|"FLV"|"mkv"|"MKV"|"mp3"|"MP3"|"mp4"|"MP4"|\
+                "rmvb"|"RMVB"|"wav"|"WAV"|"media"|"MEDIA")
             PLAYER="smplayer mplayer"
             INPUT_STRING="$2"
             check_player
@@ -218,7 +238,7 @@ then
             play_search_list
             clear_temp_file
             ;;
-            "PDF"|"pdf")     # PDF
+        "PDF"|"pdf")     # PDF
             PLAYER="FoxitReader okular"
             INPUT_STRING="$2"
             check_player
@@ -283,10 +303,10 @@ then
             play_search_list
             clear_temp_file
             ;;
-        "text"|"txt"|"md"|"markdown"|"c"|"cpp"|"s"|\
-        "TEXT"|"TXT"|"MD"|"Markdown"|"C"|"CPP"|"S"|\
-        "lds"|"config"|"make"|"makefile"|"MAKE"|"Makefile"|"MAKEFILE"|\
-        "build"|"readme"|"README")
+            "text"|"txt"|"md"|"markdown"|"c"|"cpp"|"s"|\
+                "TEXT"|"TXT"|"MD"|"Markdown"|"C"|"CPP"|"S"|\
+                "lds"|"config"|"make"|"makefile"|"MAKE"|"Makefile"|"MAKEFILE"|\
+                "build"|"readme"|"README")
             PLAYER="vim gedit emacs"
             INPUT_STRING="$2"
             check_player
@@ -336,7 +356,8 @@ then
     play_search_list
     clear_temp_file
 else
-    echo "Usage: media.sh [player] keyword"
+    echo "用法: media.sh <后缀名> <文件名关键字>"
+    echo "范例: media.sh mp4 xxx.mp4"
     exit 10
 fi
 
