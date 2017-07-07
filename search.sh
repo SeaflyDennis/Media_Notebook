@@ -19,7 +19,8 @@ function get_search_grep_list()
         echo "Error: Can't find $INPUT_STRING"
         exit 20
     fi
-    echo "~/seafly_search.temp:" ; cat ~/seafly_search.temp
+    echo "获取关键字搜索结果："
+    cat ~/seafly_search.temp
 }
 
 function get_search_pure_list()
@@ -28,7 +29,8 @@ function get_search_pure_list()
     cat ~/seafly_search.temp |\
         xargs -i -d '\n' echo {} | awk -F ':' '{print $2}' |\
         xargs -i -d '\n' echo {} > $HOME/seafly_search_pure.temp
-    echo "~/seafly_search_pure.temp:" ; cat ~/seafly_search_pure.temp
+    echo "获取纯文件名列表："
+    cat ~/seafly_search_pure.temp
 }
 
 function get_search_media_list()
@@ -38,6 +40,8 @@ function get_search_media_list()
         awk -F '\n' '{print $1}' |\
         egrep "*.mp3|*.mp4|*.avi|*.flv|*.mkv|*.rmvb|*.wav|*.wma\
               |*.MP3|*.MP4|*.AVI|*.FLV|*.MKV|*.RMVB|*.WAV|*.WMA" > $HOME/seafly_search_media.temp
+    echo "获取媒体文件列表（除wmv）："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_wmv_list()
@@ -45,6 +49,8 @@ function get_search_wmv_list()
     cat ~/seafly_search_pure.temp |\
         awk -F '\n' '{print $1}' |\
              egrep "*.wmv|*.WMV" > $HOME/seafly_search_media.temp
+    echo "获取WMV文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_pdf_list()
@@ -53,6 +59,8 @@ function get_search_pdf_list()
     cat ~/seafly_search_pure.temp |\
         awk -F '\n' '{print $1}' |\
         egrep "*.pdf|*.PDF" > $HOME/seafly_search_media.temp
+    echo "获取PDF文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_doc_list()
@@ -61,6 +69,8 @@ function get_search_doc_list()
     cat ~/seafly_search_pure.temp |\
         awk -F '\n' '{print $1}' |\
         egrep "*.doc|*.DOC|*.docx|*.DOCX" > $HOME/seafly_search_media.temp
+    echo "获取DOC&DOCX文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_ppt_list()
@@ -69,6 +79,8 @@ function get_search_ppt_list()
     cat ~/seafly_search_pure.temp |\
         awk -F '\n' '{print $1}' |\
         egrep "*.ppt|*.PPT|*.pptx|*.PPTX" > $HOME/seafly_search_media.temp
+    echo "获取PPT&PPTX文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_xls_list()
@@ -77,6 +89,8 @@ function get_search_xls_list()
     cat ~/seafly_search_pure.temp |\
         awk -F '\n' '{print $1}' |\
         egrep "*.xls|*.XLS|*.xlsx|*.XLSX" > $HOME/seafly_search_media.temp
+    echo "获取XLS&XLSX文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_png_list()
@@ -86,6 +100,8 @@ function get_search_png_list()
         awk -F '\n' '{print $1}' |\
         egrep "*.png|*.jpg|*.jpeg|*.bmp\
               |*.PNG|*.JPG|*.JPEG|*.BMP" > $HOME/seafly_search_media.temp
+    echo "获取图片文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_text_list()
@@ -96,6 +112,8 @@ function get_search_text_list()
         egrep "*.txt|*.TXT|*.md|*.markdown|*.MARKDOWN|\
         *.c|*.cpp|*.s|*.S|*.lds|*Makefile*|*makefile*|\
         *config*|*build*|*README*|*readme*" > $HOME/seafly_search_media.temp
+    echo "获取文本文件列表："
+    cat ~/seafly_search_media.temp
 }
 
 function get_search_all_path()
@@ -105,7 +123,7 @@ function get_search_all_path()
     cat ~/seafly_search_pure.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_all_path.temp
     echo ""
     echo ""
-    echo "搜索得到的总列表：        "
+    echo "获取总列表：        "
     cat -n ~/seafly_search_all_path.temp
 }
 
@@ -116,7 +134,7 @@ function get_search_final_path()
     cat ~/seafly_search_media.temp | xargs -i -d '\n' find $FIND_DIR -name {} -print > ~/seafly_search_final_path.temp
     echo ""
     echo ""
-    echo "最终列表："
+    echo "获取最终列表："
     cat -n ~/seafly_search_final_path.temp
 }
 
@@ -134,7 +152,7 @@ function check_player()
     which $PLAYER 2>/dev/null 1>/dev/null
     if [ $? -ne 0 ] ;
     then
-        echo "Error: 找不到打开该文件的软件（$PLAYER）"
+        echo "错误: 找不到打开该文件的软件（$PLAYER）"
         exit 50
     fi
 }
@@ -158,6 +176,7 @@ function clear_temp_file()
     rm -rf ~/seafly_search_pure.temp
     rm -rf ~/seafly_search_playerlist.temp
     rm -rf ~/seafly_search_all_path.temp
+    echo ""
 }
 
 
